@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<! Meta tags check >
+		<title>Code for Q4 Project </title>
+		<meta charset="utf-8">
+		<meta name="author" content="Hale Sosa, Neo Mamaril" />
+		<meta name="description" content="Our code for the 4th quarter project" />
+		<meta name="keywords" content="Html, Forms, Javascript" />
+		<meta name="date"  content="29/04/2022" />
+		<meta name="revised"  content="13/05/2022" />
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			overflow: auto;
+		}
+		body{
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(270deg, #D9A7C7, #FFFCDC);
+			font-family: helvetica;
+		}
+		header{
+			margin: 0;
+			padding: 5%;
+			text-align: center;
+			position: sticky;
+			width: 50%;
+			box-sizing: border-box;
+			border: solid 1px black;
+			font-size: 50px;
+			border-radius: 50px 25px 75px 25px;
+		}
+		h1{
+			font-size: 30px;
+			border: solid 1px black;
+			border-radius: 25px;
+			text-align: center;
+			width:75%;
+			margin-left: 12.5%;
+			margin-right: 12.5%;	
+		}
+		legend{
+			font-size: 30px;
+			border: solid 1px black;
+			border-radius: 25px;
+			text-align: center;
+			width:75%;
+			margin-left: 12.5%;
+			margin-right: 12.5%;	
+		}
+		form{
+			border: solid 1px black;
+			border-radius: 25px;
+			text-align: center;
+			width:75%;
+			margin-left: 12.5%;
+			margin-right: 12.5%;
+		}
+		label{
+			border: solid 1px black;
+			font-size:30px;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		input{
+			border: solid 1px black;
+			text-align: left;
+			width:10%;
+			font-size:20px;
+		}
+		#facebook {
+			width: 50px;
+			height: 50px;
+			background: url(https://i.imgur.com/MqbOicN.png) 0 0;
+			border-radius: 15%;
+		}
+
+		#twitter {
+			width: 50px;
+			height: 50px;
+			background: url(https://i.imgur.com/MqbOicN.png) -65px 0;
+			border-radius: 15%;
+		}
+
+		#instagram {
+			width: 50px;
+			height: 50px;
+			background: url(https://i.imgur.com/MqbOicN.png) -130px 0;
+			border-radius: 15%;
+		}
+		footer{
+			z-index:100;
+			text-align: center;
+			width: 100%;
+			background-color: #f67280;
+		}
+		.footer-contact {
+                 text-align:center;
+                 letter-spacing:5px;   
+         }
+        .footer-links {
+            text-align:center;
+		} 
+		nav a{
+			display: flex;
+			justify-content: center;
+			margin-left: 12.5%;
+			margin-right: 12.5%;
+			text-align: center;
+			font-size: 25px;
+			background-color: #85DCBA;
+			text-decoration:none;
+		}
+		a#submit{
+			display: flex;
+			justify-content: center;
+			margin-left: 12.5%;
+			margin-right: 12.5%;
+			text-align: center;
+			font-size: 25px;
+			background-color: #85DCBA;
+			text-decoration:none;
+		}
+	</style>
+	</head>
+	<body>
+		<header>The Ha-eo Express</header>
+		<br>
+		<nav><a href="index.html">Go Back Home</a></nav>
+		<br/><br/>
+		<h1>~Menu~</h1>
+		<br>
+		<section>
+			<form>
+				<legend>Appetizers:</legend>
+					<label>Uramaki</label>
+					<input type="number" id="urumaki" name="urumaki" min="0"><br/>
+					<label>Temaki</label>
+					<input type="number" id="temaki" name="temaki" min="0"><br/>
+					<label>Maki</label>
+					<input type="number" id="maki" name="maki" min="0"><br/>
+					<label>Sashimi</label>
+					<input type="number" id="sashimi" name="sashimi" min="0"><br/>
+					<label>Nigiri</label>
+					<input type="number" id="nigiri" name="nigiri" min="0"><br/>
+					<input type="reset" value="Reset">
+			</form>
+		</section>
+		<br/><br/>
+		<section>
+			<form>
+				<legend>Meals:</legend>
+					<label>Seafood Deluxe</label>
+					<input type="number" id="seafoodDeluxe" name="seafoodDeluxe" min="0"><br/>
+					<label>Bright Sun</label>
+					<input type="number" id="brightSun" name="brightSun" min="0"><br/>
+					<label>Family Meal</label>
+					<input type="number" id="familyMeal" name="familyMeal" min="0"><br/>
+					<input type="reset" value="Reset">
+			</form>
+		</section>
+		<br/><br/>
+		<section>
+			<form>
+				<legend>Desserts:</legend>
+					<label>Parfait</label>
+					<input type="number" id="parfait" name="parfait" min="0"><br/>
+					<label>Crepes</label>
+					<input type="number" id="crepes" name="crepes" min="0"><br/>
+					<label>Wagashi</label>
+					<input type="number" id="wagashi" name="wagashi" min="0"><br/>
+					<input type="reset" value="Reset">
+			</form>
+			<br/>
+			<a id="submit" href="Confirmation page.html">Submit</a>
+		</section>
+	<footer>
+		<div class = "footer-contact">
+			<p>Contact us:</p>
+		</div>
+		<br>
+		<div class="footer-links">
+			<p> e-mail: <a href="mailto:b2025eagmamaril@pshs.edu.ph"> Ezekiel Antonio G. Mamaril </a> | <a href="mailto:b2025hcasosa@pshs.edu.ph"> Hale Clement A. Sosa </a> <br/> call: +63-920-655-9213 | +63-915-718-2042 </p>
+			<a target="_blank" href="https://twitter.com/SosaHale"><img id="twitter"></a>
+			<a target="_blank" href="https://www.facebook.com/Hacromander"><img id="facebook"></a>
+			<a target="_blank" href="https://www.instagram.com/hacro_hale/?hl=en"><img id="instagram"></a>
+		</div>
+	</footer>	
+	<script>
+	</script>
+	</body>
+</html>
